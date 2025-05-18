@@ -1,0 +1,180 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.auth-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  padding: 2.5rem;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-header h1 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+  color: var(--light-text);
+  font-size: 1rem;
+}
+
+.auth-error {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--error);
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgot-password a {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-button:hover {
+  background-color: #063a8c;
+}
+
+.auth-button:disabled {
+  background-color: #a0b4d6;
+  cursor: not-allowed;
+}
+
+.auth-or {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.auth-or::before,
+.auth-or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.auth-or span {
+  padding: 0 1rem;
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.auth-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-button {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.social-button.google {
+  color: #4285f4;
+}
+
+.social-button.facebook {
+  color: #3b5998;
+}
+
+.social-button:hover {
+  background-color: #f8f8f8;
+}
+
+.auth-redirect {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+
+.auth-redirect a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-redirect a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 1.5rem;
+  }
+} 
